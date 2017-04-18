@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-gulp-prompt/gulp-prompt/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-gulp-prompt/node_modules/gulp-prompt/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-prompt">npmtest-gulp-prompt (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-prompt/gulp-prompt/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-prompt/node_modules/gulp-prompt/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">6.45% <small>(2 / 31)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-prompt/gulp-prompt/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-prompt/node_modules/gulp-prompt/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -361,66 +359,66 @@
 &nbsp;
 module.exports = {
 &nbsp;
-	prompt: <span class="fstat-no" title="function not covered" >function(questions, callback){</span>
-<span class="cstat-no" title="statement not covered" >		var prompted = false;</span>
-<span class="cstat-no" title="statement not covered" >		return es.map(<span class="fstat-no" title="function not covered" >function(file, cb){</span></span>
+	prompt: <span class="fstat-no" title="function not covered">function(questions, callback){</span>
+<span class="cstat-no" title="statement not covered">		var prompted = false;</span>
+<span class="cstat-no" title="statement not covered">		return es.map(<span class="fstat-no" title="function not covered">function(file, cb){</span></span>
 			
-<span class="cstat-no" title="statement not covered" >			if(prompted===true){</span>
-<span class="cstat-no" title="statement not covered" >				cb(null,file);</span>
-<span class="cstat-no" title="statement not covered" >				return;</span>
+<span class="cstat-no" title="statement not covered">			if(prompted===true){</span>
+<span class="cstat-no" title="statement not covered">				cb(null,file);</span>
+<span class="cstat-no" title="statement not covered">				return;</span>
 			}
 			
-<span class="cstat-no" title="statement not covered" >			if(!questions instanceof Array){</span>
-<span class="cstat-no" title="statement not covered" >				questions = [questions];</span>
+<span class="cstat-no" title="statement not covered">			if(!questions instanceof Array){</span>
+<span class="cstat-no" title="statement not covered">				questions = [questions];</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if(typeof callback !== 'function'){</span>
-<span class="cstat-no" title="statement not covered" >				callback = <span class="fstat-no" title="function not covered" >function(){</span>};</span>
+<span class="cstat-no" title="statement not covered">			if(typeof callback !== 'function'){</span>
+<span class="cstat-no" title="statement not covered">				callback = <span class="fstat-no" title="function not covered">function(){</span>};</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			inq.prompt(questions, <span class="fstat-no" title="function not covered" >function(res){</span></span>
-<span class="cstat-no" title="statement not covered" >				callback(res);</span>
-<span class="cstat-no" title="statement not covered" >				cb(null, file);</span>
+<span class="cstat-no" title="statement not covered">			inq.prompt(questions, <span class="fstat-no" title="function not covered">function(res){</span></span>
+<span class="cstat-no" title="statement not covered">				callback(res);</span>
+<span class="cstat-no" title="statement not covered">				cb(null, file);</span>
 			});
-<span class="cstat-no" title="statement not covered" >			prompted = true;</span>
+<span class="cstat-no" title="statement not covered">			prompted = true;</span>
 		});
 	},
 &nbsp;
-	confirm: <span class="fstat-no" title="function not covered" >function(options){</span>
-<span class="cstat-no" title="statement not covered" >		var prompted = false;</span>
-<span class="cstat-no" title="statement not covered" >		return es.map(<span class="fstat-no" title="function not covered" >function(file, cb){</span></span>
+	confirm: <span class="fstat-no" title="function not covered">function(options){</span>
+<span class="cstat-no" title="statement not covered">		var prompted = false;</span>
+<span class="cstat-no" title="statement not covered">		return es.map(<span class="fstat-no" title="function not covered">function(file, cb){</span></span>
 			
-<span class="cstat-no" title="statement not covered" >			if(prompted===true){</span>
-<span class="cstat-no" title="statement not covered" >				cb(null,file);</span>
-<span class="cstat-no" title="statement not covered" >				return;</span>
+<span class="cstat-no" title="statement not covered">			if(prompted===true){</span>
+<span class="cstat-no" title="statement not covered">				cb(null,file);</span>
+<span class="cstat-no" title="statement not covered">				return;</span>
 			}
 			
-<span class="cstat-no" title="statement not covered" >			var opts = {</span>
+<span class="cstat-no" title="statement not covered">			var opts = {</span>
 				type: 'confirm',
 				name: 'val',
 				message: 'Are you sure?',
 				default: false
 			};
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if(typeof options === 'string'){</span>
-<span class="cstat-no" title="statement not covered" >				opts.message = options;</span>
+<span class="cstat-no" title="statement not covered">			if(typeof options === 'string'){</span>
+<span class="cstat-no" title="statement not covered">				opts.message = options;</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			if(typeof options !== 'object'){</span>
-<span class="cstat-no" title="statement not covered" >				options = {};</span>
+<span class="cstat-no" title="statement not covered">			if(typeof options !== 'object'){</span>
+<span class="cstat-no" title="statement not covered">				options = {};</span>
 			}
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			opts.message = options.message || opts.message;</span>
-<span class="cstat-no" title="statement not covered" >			opts.default = options.default || opts.default;</span>
+<span class="cstat-no" title="statement not covered">			opts.message = options.message || opts.message;</span>
+<span class="cstat-no" title="statement not covered">			opts.default = options.default || opts.default;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >			inq.prompt([opts], <span class="fstat-no" title="function not covered" >function(res){</span></span>
+<span class="cstat-no" title="statement not covered">			inq.prompt([opts], <span class="fstat-no" title="function not covered">function(res){</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >				if(res.val){</span>
-<span class="cstat-no" title="statement not covered" >					cb(null, file);</span>
+<span class="cstat-no" title="statement not covered">				if(res.val){</span>
+<span class="cstat-no" title="statement not covered">					cb(null, file);</span>
 				}
 &nbsp;
 			});
-<span class="cstat-no" title="statement not covered" >			prompted = true;</span>
+<span class="cstat-no" title="statement not covered">			prompted = true;</span>
 		});
 	},
 	
@@ -428,10 +426,11 @@ module.exports = {
 };
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 17:17:06 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 19:15:15 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
